@@ -1,266 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Mew :: hardware passwords manager :: аппаратный менеджер паролей">
-    <meta name="author" content="jneko.ru">
-    <link rel="icon" href="favicon.ico">
-
-    <title>Mew - аппаратный менеджер паролей</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="./assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container-fullwidth">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-              <img src="./img/mew-logo.png" alt="MeW Logo" style="display: inline-block;"><span  style="display: inline-block;">MeW HPM</span>
-              </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#about">Подробнее о проекте</a></li>
-                <li><a href="#wherebuy">Где купить?</a></li>
-                <li><a href="#contact">Контакты</a></li>
-                <li><a href="https://github.com/konachan700/Mew">Github проекта</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="./img/img2car.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Безопасность</h1>
-              <p>
-              
-MeW позволяет использовать для защиты Ваших данных очень сложные пароли, подобрать которые невозможно. Паролей на MeW можно создавать любое количество*, что позволяет использовать разные пароли для разных сайтов или приложений. MeW имеет защиту пин-кодом для большей безопасности.
-              
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="./img/img3car.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Удобство использования</h1>
-              <p>
-              
-Не нужно никаких драйверов, MeW совместимо и работает со всеми популярными ОС, включая Android. Ввод пароля нажатием всего одной кнопки. Использовать MeW сможет даже ребёнок.
-
-              </p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="./img/img1car.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Открытая платформа</h1>
-              <p>
-
-Полностью открытая аппаратная и программная платформа гарантирует отсутствие шпионских модулей в прошивке и исключает доступ посторонних лиц к паролям. Для продвинутых пользователей существует возможность самостоятельного создания дополнительного функционала.
-              <p><a class="btn btn-lg btn-primary" href="https://github.com/konachan700/Mew" role="button">Перейти в Github проекта</a></p>
-              
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Назад</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Вперед</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="" src="./img/mew-logo2.png" alt="Generic placeholder image" width="100" >
-          
-          <h2>MeW Simple</h2>
-          
-          <p>Простое бюджетное устройство, хранящее 12 паролей. Подключается к компьютеру, ноутбуку или телефону по USB.</p>
-          
-          <p><a class="btn btn-default" href="./mew_dev.html" role="button">Подробнее &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        
-        
-        <div class="col-lg-4">
-          <img class="" src="./img/mew-logo1.png" alt="Generic placeholder image" width="100" >
-          
-          <h2>MeW Pro</h2>
-         
-         
-          <p>MeW c расширенным функционалом. Количество хранимых паролей не ограничено. Имеет собственную батарею, цветной сенсорный дисплей, 4 программируемые кнопки. Поддерживает защищеное хранилище на MicroSD.</p>
-          
-          <p><a class="btn btn-default" href="./mew_dev.html" role="button">Подробнее &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        
-        
-        <div class="col-lg-4">
-          <img class="" src="./img/mew-logo3.png" alt="Generic placeholder image" width="100" >
-          
-          <h2>MeW Developer</h2>
-          
-          <p>MeW для разработчиков ПО или аппартной части. Фактически, это MeW Pro, только с выведенными на плате разьемами программирования и тестирования, а также с распаянными светодиодами.</p>
-          
-          <p><a class="btn btn-default" href="./mew_dev.html" role="button">Подробнее &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      
-      
-      
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="about">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Что такое MeW? <span class="text-muted">И как его использовать?</span></h2>
-          <p class="lead">
-            MeW - это многофункциональная клавиатура для ввода паролей. Просто подключаете MeW к USB-порту, ставите курсор на поле ввода пароля и нажимаете кнопку на устройстве: пароль вводится автоматически. Никто больше не сможет подсмотреть или подобрать Ваш пароль, MeW создает очень сложные и длинные пароли. MeW не требует установки, настройки и готово к использованию уже при первом подключении.
-          </p>
-          <p class="lead">
-            <p><a class="btn btn-default" href="./mew_info.html" role="button">Подробнее o MeW &raquo;</a></p>
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="./img/mew-what.png" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="wherebuy">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Я хочу купить MeW. <span class="text-muted">Где это можно сделать?</span></h2>
-          
-          <p class="lead">
-          На настоящий момент устройство не вышло на уровень промышленного производства. Имеются лишь прототипы и тестовые образцы.
-          </p>
-          <p class="lead">
-          Если Вы - разработчик, то можете скачать проектные файлы с github и сделать устройство самостоятельно, заказав его в Китае. Также можно <a href="#contact">написать нам</a>, и мы предоставим плату, если она есть на тот момент в наличии.
-          </p>
-          <p class="lead">
-          Если Вы журналист, Вас заинтерсовал проект и Вы готовы написать статью о проекте на какой-либо ресурс, мы с радостью подарим тестовый образец устройства для написания обзора.
-          </p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="./img/mew-hw-2.png" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="contact">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Если Вас заинтересовал проект, <span class="text-muted">напишите нам</span></h2>
-          <p class="lead">
-            <br>
-            E-Mail: a@2kx.ru, a@mew-hpm.ru
-          </p>
-          <p class="lead">
-            Skype: konachan.700
-          </p>
-          <p class="lead">
-            Jabber: mew-hpm@jabber.ru
-          </p>
-          <p class="lead">
-            Telegram: @Konachan700
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="./img/mew-logo-contacts.png" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 MeW, Inc. <!--&middot; a href="#">Privacy</a> &middot; <a href="#">Terms</a--></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="./assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Mew - hardware password manager">
+		<meta name="author" content="mewhpm.com">
+		<link rel="icon" href="favicon.ico">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
+			integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet">
+		
+		<title>Mew - hardware password manager</title>
+	</head>
+	<body>
+		<header>
+		  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand font-weight-bold" href="#">
+				<h3 class="header-mew">MeW HPM</h3>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Home</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://forum.mewhpm.com">Forum</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://wiki.mewhpm.com">Wiki</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://calendar.google.com/calendar/embed?src=r9jjk3jh09015moed78u6rtlpc%40group.calendar.google.com&ctz=Europe%2FMoscow">Calendar</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://github.com/konachan700/Mew">Code repo</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://easyeda.com/konachan.700/MeW_Pro_v2.1">Hardware</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
+		</header>
+		<main role="main" class="container">
+			<div class="container content-mew">
+			  <h3>MeW. Hardware password manager.</h3>
+			  <h5 class="margin-left-1 padding-top-1">&bull; What is it?</h5>
+			  <div class="container mew-box-1 margin-left-1">
+				<img src="mew-logo.png" class="rounded float-right" height="128px" style="padding: 8px;" alt="...">
+				<p>It's a small USB device for hold a your passwords, private keys and cryptowallets.</p>
+				<ul>
+					<li>Easy to use.</li>
+					<li>Fully open sourced.</li>
+					<li>No drivers or propietary software required.</li>
+					<li>Highly protected for stolen critical data.</li>
+				</ul>
+			  </div>
+			  
+			  <h5 class="margin-left-1 padding-top-1">&bull; How it's work?</h5>
+			  <div class="container mew-box-1 margin-left-1">
+				<p>
+					Connect MeW to PC or mobile device. Pair MeW with your smartphone via bluetooth. Install a MeW HPM app from Google Play or Appstore. Use it. 
+					<br><i>Demo video will be here a bit later :3</i>
+				</p>
+				<p>
+					12 passwords, what you use more often, you can input directly from device. Other passwords could be entered by MeW HPM app.
+					<br><i>Demo video will be here a bit later :3</i>
+				</p>
+				<p>
+					You can exchanging public keys with your friends directly via bluetooth. 
+				</p>
+				<p>
+					Technically, it is a HID-keyboard.
+				</p>
+				<p>
+					Passwords are not stored in device, all passwords was generate on-tne-fly in depends of entered PIN-code and internal master key. 
+					Nobody and nothing can't theft your passwords database, because it isn't exist. 
+					If anybody will theft the device, he can't bruteforce it - for each PIN-code device generate different passwords, and, if you set this option, fake logins will be show. <br>
+				</p>
+				<p>
+					Your private keys and wallets, what was stored on the device, was encrypted by use AES-256. Encryption key is generated from master key and pin-code on-the-fly. 
+					Master key has been stored internally and can't be extracted, of course, if you are set the maximum security level. 
+				</p>
+			  </div>
+			  <h5 class="margin-left-1 padding-top-1">&bull; I was lost my MeW? How I can repair my passwords?</h5>
+			  <div class="container mew-box-1 margin-left-1">
+				<p>
+					When you are starting your MeW at first time with normal security level, device key will shown. Save device key at secure place. 
+					MeW has a cloud backup for encrypted master key. For recovery your passwords on new device you should be enter a device key in the application, and enter you PIN-code in MeW.
+				</p>
+				<p>
+					In the high security level cloud backup will disabled, because encrypted master key in this level can't be extracted from device. 
+					If you was lost you MeW or forget a PIN-code, you lost all you passwords.
+				</p>
+		      </div>
+			  <h5 class="margin-left-1 padding-top-1">&bull; Gallery</h5>
+				<div class="container mew-box-1 margin-left-1">
+					<a href="board2.png"><img src="board2.png" alt="..." class="img-thumbnail" style="max-height: 168px"></a>
+					<a href="board1.png"><img src="board1.png" alt="..." class="img-thumbnail" style="max-height: 168px"></a>
+					<a href="demo1.jpg"><img src="demo1.jpg" alt="..." class="img-thumbnail" style="max-height: 168px"></a>
+					<a href="demo2.jpg"><img src="demo2.jpg" alt="..." class="img-thumbnail" style="max-height: 168px"></a>
+					<a href="demo3.jpg"><img src="demo3.jpg" alt="..." class="img-thumbnail" style="max-height: 168px"></a>
+				</div>
+				<div style="padding: 16px"></div>
+			</div>
+		</main>
+		<footer class="footer">
+		  <div class="container">
+			<span class="text-muted">MeW HPM 2018</span>
+		  </div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	</body>
 </html>
