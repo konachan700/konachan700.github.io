@@ -7,7 +7,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background-color: #acd2c5 !important;
+  background-color: #8c8c8c !important;
 }
 .footer {
   position: absolute;
@@ -61,8 +61,12 @@ code {
 	margin-left: 16px;
 }
 
-.mew-box-1 {
+h3 {
 	color: #FFFFFF !important;
+}
+
+.mew-box-1 {
+	color: #DDDDDD !important;
 	padding: 16px;
 	background-color: #000000 !important;
 	border-radius: .25rem;
